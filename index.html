@@ -38,30 +38,10 @@
   <main class="content">
     <div class="container">
       <section class="hero">
-        <div class="hero__token token" id="dropdown-btn">
+        <div class="hero__token token">
           <div class="token__box">
-            <div class="token__header token--flex">
-              <div class="token__icon"></div>
-
-              <!-- Start Список токенов -->
-              <ul id="dropdown-list">
-                <li>Токен 1</li>
-                <li>Токен 2</li>
-                <li>Токен 3</li>
-                <li>Токен 4</li>
-                <li>Токен 5</li>
-                <li>Токен 6</li>
-                <li>Токен 7</li>
-                <li>Токен 8</li>
-                <li>Токен 9</li>
-                <li>Токен 10</li>
-                <li>Токен 11</li>
-                <li>Токен 12</li>
-                <li>Токен 13</li>
-                <li>Токен 14</li>
-                <li>Токен 15</li>
-              </ul>
-              <!-- End Список токенов -->
+            <div class="token__header token--flex" id="dropdown-btn">
+              <div class="token__icon icon-defoult"></div>
               <div class="token__center"><span class="token__text">Token</span>
                 <!-- Start Заголовок выбора ткена -->
                 <p class="token__name" id="token">Выбрать токен</p>
@@ -70,11 +50,32 @@
             </div>
             <div class="token__body token--flex">
               <div class="token__text token__text--max">Max</div>
-              <input class="token__value" type="number" min="0" placeholder="0.0" id="value" autocomplete="off">
+              <input class="token__value" type="number" min="0" placeholder="0.0" id="value" autocomplete="off"
+                disabled>
               <div class="token__text token__text--end">Balance</div>
             </div>
           </div>
+          <!-- Start Список токенов -->
+          <ul class="dropdown-list">
+            <li><span class="list__icon icon-1"></span>Токен 1</li>
+            <li><span class="list__icon icon-2"></span>Токен 2</li>
+            <li><span class="list__icon icon-3"></span>Токен 3</li>
+            <li><span class="list__icon icon-4"></span>Токен 4</li>
+            <li><span class="list__icon icon-5"></span>Токен 5</li>
+            <li><span class="list__icon icon-6"></span>Токен 6</li>
+            <li><span class="list__icon icon-7"></span>Токен 7</li>
+            <li><span class="list__icon icon-8"></span>Токен 8</li>
+            <li><span class="list__icon icon-9"></span>Токен 9</li>
+            <li><span class="list__icon icon-10"></span>Токен 10</li>
+            <li><span class="list__icon icon-11"></span>Токен 11</li>
+            <li><span class="list__icon icon-12"></span>Токен 12</li>
+            <li><span class="list__icon icon-13"></span>Токен 13</li>
+            <li><span class="list__icon icon-14"></span>Токен 14</li>
+            <li><span class="list__icon icon-15"></span>Токен 15</li>
+          </ul>
+          <!-- End Список токенов -->
         </div>
+
         <div class="hero__token token">
           <div class="token__box">
             <div class="token__header token--flex">
@@ -101,7 +102,7 @@
             </div>
           </div>
         </div>
-        <button class="hero__btn btn--popup">Connect </button>
+        <button class="hero__btn btn--popup">Connect</button>
       </section>
     </div>
   </main>

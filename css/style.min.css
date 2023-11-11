@@ -654,7 +654,6 @@ picture {
   width: 40px;
   height: 40px;
   margin: 16px;
-  background: url("../images/icon-defoult.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1149,24 +1148,43 @@ picture {
     max-width: 660px;
   }
 }
-
-#dropdown-btn {
+.hero__token {
   position: relative;
 }
-#dropdown-list {
+.token__icon {
+  background-image: url("../images/icon-defoult.svg");
+}
+.open-list {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+#dropdown-btn {
+  cursor: pointer;
+}
+.open {
+  cursor: pointer;
+}
+.dropdown-list {
   display: none;
   width: 100%;
   position: absolute;
   top: 76.4px;
   left: 0;
   background: #fff;
-  outline: 1px solid #e4e4e6;
+  border: 1px solid #e4e4e6;
   max-height: 325px;
   overflow: auto;
   z-index: 10;
 }
-#dropdown-list li {
-  padding: 16px;
+.dropdown-list.open {
+  display: block;
+}
+.dropdown-list li {
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #e4e4e6;
   line-height: 24px;
   font-family: IBMPlexMono-Medium, monospace;
@@ -1178,15 +1196,64 @@ picture {
   -ms-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
 }
-#dropdown-list li:last-of-type {
+.dropdown-list li:last-of-type {
   border-bottom: 0;
 }
-#dropdown-list li:hover {
+.dropdown-list li:hover {
   background-color: #f2f2f2;
 }
-
-.dropdown-icon {
-  padding: 6px;
-  fill: #fff;
-  background-color: #4a4f55;
+.list__icon {
+  margin: 16px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Тут меняем изображение для иконки. Иконки крипты хранятся в /images/icons-list/. Название иконки соответствует номеру списка*/
+.icon-1 {
+  background-image: url("../images/icons-list/1.png");
+}
+.icon-2 {
+  background-image: url("../images/icons-list/2.png");
+}
+.icon-3 {
+  background-image: url("../images/icons-list/3.png");
+}
+.icon-4 {
+  background-image: url("../images/icons-list/4.png");
+}
+.icon-5 {
+  background-image: url("../images/icons-list/5.png");
+}
+.icon-6 {
+  background-image: url("../images/icons-list/6.png");
+}
+.icon-7 {
+  background-image: url("../images/icons-list/7.png");
+}
+.icon-8 {
+  background-image: url("../images/icons-list/8.png");
+}
+.icon-9 {
+  background-image: url("../images/icons-list/9.png");
+}
+.icon-10 {
+  background-image: url("../images/icons-list/10.png");
+}
+.icon-11 {
+  background-image: url("../images/icons-list/11.png");
+}
+.icon-12 {
+  background-image: url("../images/icons-list/12.png");
+}
+.icon-13 {
+  background-image: url("../images/icons-list/13.png");
+}
+.icon-14 {
+  background-image: url("../images/icons-list/14.png");
+}
+.icon-15 {
+  background-image: url("../images/icons-list/15.png");
 }
